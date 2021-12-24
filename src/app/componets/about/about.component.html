@@ -1,0 +1,25 @@
+<nz-row  nzGutter="5" style="margin-top: 100px;">
+    <nz-col [nzSm]="24" [nzXs]="24">
+        <h1 style="text-align: center;"><b>About me</b></h1>
+    </nz-col>
+    <nz-col [nzSm]="24" [nzXs]="24">
+        <nz-card class="card" style="width: 100%;">
+            <nz-card-tab>
+                <nz-tabset nzSize="large" nzCentered>
+
+                    <nz-tab nzTitle=" Who I'am ">
+                      <app-who-iam></app-who-iam>  
+                    </nz-tab>
+
+                    <nz-tab nzTitle="Qualification & Certification ">
+                      <app-qualification-certification></app-qualification-certification>  
+                    </nz-tab>
+
+                    <nz-tab nzTitle="Skills & Languvages">
+                        <app-skills-languvages></app-skills-languvages>  
+                      </nz-tab>
+                </nz-tabset>
+            </nz-card-tab>
+        </nz-card>
+    </nz-col>
+</nz-row>

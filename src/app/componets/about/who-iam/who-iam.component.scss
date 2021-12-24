@@ -1,0 +1,52 @@
+* {
+    font-size: 1rem;
+}
+h2 {
+    color: var(--color-primary);
+    text-align: center;
+    padding: 15px;
+}
+a > [nz-icon] {
+    font-size: 30px;
+    color:var(--color-primary);
+    transition: transform 0.2s; /* Animation */
+}
+a > [nz-icon]:hover {
+    transform: scale(1.5);
+}
+button:hover {
+    color: var(--color-primary);
+    transform: scale(1.1);
+    background: none;
+}
+.div {
+    margin-left: 3vw;
+    padding: 40px;
+}
+.icon {
+    display: inline;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+@media (max-width: 500px) {
+    .div {
+        margin-left: 0;
+        padding: 0;
+    }
+    .img {
+        text-align: center;
+    }
+}
+@media (max-width: 947px) {
+    .div {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 690px) {
+    .div {
+        margin-left: 0;
+        padding: 0;
+    }
+}

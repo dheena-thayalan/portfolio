@@ -1,0 +1,27 @@
+<nz-row nzGutter="5" nzAlign="middle">
+  <nz-col [nzSm]="24" [nzXs]="24">
+    <h1 style="text-align: center;"><b>Project</b></h1>
+  </nz-col>
+  <nz-col [nzSm]="1" [nzXs]="0"></nz-col>
+  <nz-col [nzSm]="6" [nzXs]="20" nzAlign="middle" *ngFor="let data of projectData">
+    <nz-card class="card" nzHoverable [nzTitle]="logistic"
+      [nzActions]="[actionSetting, actionEdit, actionEllipsis]" [nzExtra]="extraTemplate">
+      <p>{{data.explin}}</p>
+    </nz-card>
+    <ng-template #extraTemplate>
+      <a>More</a>
+    </ng-template>
+    <ng-template #logistic>
+      <b>{{data.titel}}</b>
+    </ng-template>
+    <ng-template #actionSetting>
+      <p><i nz-icon nzType="star-o" style="margin-right: 8px;"></i>156</p>
+    </ng-template>
+    <ng-template #actionEdit>
+      <p><i nz-icon nzType="star-o" style="margin-right: 8px;"></i>156</p>
+    </ng-template>
+    <ng-template #actionEllipsis>
+      <p><i nz-icon nzType="star-o" style="margin-right: 8px;"></i>2</p>
+    </ng-template>
+  </nz-col>
+</nz-row>

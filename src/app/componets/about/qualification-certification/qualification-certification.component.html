@@ -1,0 +1,49 @@
+<nz-row nzGutter="5">
+  <nz-col [nzSm]="15" [nzXs]="24">
+
+    <!-- Educational Qualification  -->
+
+    <nz-list>
+      <nz-list-item *ngFor="let data of qualificationData">
+        <ng-container>
+          <nz-list-item-meta [nzAvatar]="avaterIcon">
+            <nz-list-item-meta-title>{{data.course}}</nz-list-item-meta-title>
+            <nz-list-item-meta-description>
+              from
+              <a [href]="data.college_url" target="_blank">{{data.college}}</a>
+              {{data.descripsion}}
+            </nz-list-item-meta-description>
+          </nz-list-item-meta>
+          {{data.year}}
+        </ng-container>
+      </nz-list-item>
+      <nz-list-header style="text-align: center;color: var(--color-primary);"><b>Educational Qualification</b>
+      </nz-list-header>
+    </nz-list>
+
+    <!-- Certifications -->
+
+    <nz-list>
+      <nz-list-item *ngFor="let data of certificationsData">
+        <ng-container>
+          <nz-list-item-meta [nzAvatar]="avaterIcon">
+            <nz-list-item-meta-title>{{data.course}}</nz-list-item-meta-title>
+            <nz-list-item-meta-description>
+              from
+              <a [href]="data!.college_url" >{{data.college}}</a>
+              {{data.descripsion}}
+            </nz-list-item-meta-description>
+          </nz-list-item-meta>
+          {{data?.year}}
+        </ng-container>
+      </nz-list-item>
+      <nz-list-header style="text-align: center;color: var(--color-primary);"><b>Certification</b></nz-list-header>
+    </nz-list>
+
+  </nz-col>
+
+  <!-- Image -->
+  <nz-col [nzSm]="{span:8,offset:1}" [nzXs]="24">
+    <img style="width:100%;height:80%;" Src="https://www.aegisinfoways.com/images/dynamic-crm/man.png" />
+  </nz-col>
+</nz-row>

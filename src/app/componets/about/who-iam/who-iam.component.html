@@ -1,0 +1,63 @@
+<h2 style="text-align:center; bottom: 0;" nz-typography>{{quotes}}</h2>
+<nz-row nzGutter="5">
+    <nz-col [nzSm]="16" [nzXs]="24">
+        <article nz-typography>
+            <div class="div">
+                <span nz-typography>
+                    <strong>
+                        It's Dheena, UI developer from India. Also I do some backend development.
+                        <span nz-typography><br />
+                            I'm a techno explorer across different domains. I take great care in the experience,
+                            architecture, and code
+                            quality of the things I build.
+                        </span><span nz-typography><br />
+                            I am also an open-source enthusiast. I learned a lot from the open-source community and I
+                            love
+                            to
+                            collaborateand share knowledge in open-source projects.
+                        </span>
+
+                        <div nz-typography style="margin-left:1vw;">
+                            <ul>
+                                <li>
+                                    Ping me about anything, I am happy to help
+                                </li>
+                                <li>
+                                    I’m currently learning System Designs & Architecture
+                                </li>
+                                <li>
+                                    And I'm mostly active on LinkedIn and Instagram
+                                </li>
+                            </ul>
+                        </div>
+                    </strong>
+                </span>
+            </div>
+        </article><br />
+    </nz-col>
+    <nz-col class="image" [nzSm]="{span:6,offset:1}" style="text-align: center;" class="img" [nzXs]="24">
+        <img style="width:83%; height:83%;" Src="assets/dheena_face.png" />
+    </nz-col>
+</nz-row>
+
+
+
+<!-- icons -->
+<div style="text-align: center;top:0">
+    <p>Do you like my works? Let's have a Coffee with me.</p>
+
+    <a href="https://drive.google.com/file/d/1pKGe4LrrEI_fCQTwNlRVWtnr1Bkqi-k6/view?usp=sharing" target="_blank">
+        <button nz-button nzType="primary" style="display: inline-block; height:40px;">
+            <i nz-icon nzType="file" style="font-size: 25px;"></i>
+            SEE MY RESUME
+        </button>
+    </a><br/><br/>
+
+    <div class="icon" *ngFor="let data of IconData">
+        <a nz-tooltip nzTooltipTitle="Let's ride with {{data.name | uppercase}} " [href]="data.href" target="_blank"><i
+                nz-icon [nzType]="data.icons"></i></a>
+    </div><br />
+
+    <!-- profile Button -->
+
+</div>

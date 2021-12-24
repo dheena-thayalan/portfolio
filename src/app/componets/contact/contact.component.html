@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
+  <path fill="#0099ff" fill-opacity="1"
+    d="M0,0L48,26.7C96,53,192,107,288,117.3C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,144C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+  </path>
+</svg>
+<nz-row style="min-height: 40vh; background-color: var(--color-primary);justify-content: center;" nzGutter="5">
+  <nz-col [nzSm]="{span:12}" [nzXs]="22">
+    <h1>Do you want to collaborate with me?</h1>
+    <h2>We can work together to build more awesome things.</h2>
+    <h3>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</h3>
+<!--  location button  -->
+    <nz-row nzGutter="5" style="padding: 10px;">
+
+      <nz-col [nzSm]="6" [nzXs]="24">
+        <button nz-button nzType="default" style="height:40px;  font-weight: bold; font-size:1rem;margin-left: 10px;">
+          <i nz-icon nzType="environment" nzTheme="outline"></i> India,Tamilnadu
+        </button>
+      </nz-col>
+
+    <!-- mobile number -->
+      <nz-col [nzSm]="18" [nzXs]="24">
+        <nz-divider nzType="vertical"></nz-divider>
+        <div style="display: inline-block; color: var(--color-tertiary);">
+          <i nz-icon nzType="whats-app" style="font-size: 30px;" nzTheme="outline"></i>
+          <h3 style="display: inline-block;color: var(--color-tertiary);">9894146114</h3>
+        </div>
+      </nz-col>
+
+    <!-- icons -->
+      <nz-col [nzSm]="2" *ngFor="let data of IconData" style="justify-content: space-between;" [nzXs]="4">
+        <a nz-tooltip nzTooltipTitle="Let's ride with {{data.name | uppercase}} " nzTheme="fill" [href]="data.href"
+          class="icons" target="_blank"><i nz-icon [nzType]="data.icons"></i> </a>
+        <nz-divider nzType="vertical"></nz-divider>
+      </nz-col>
+
+    </nz-row>
+
+  </nz-col>
+  <nz-col [nzSm]="6" [nzXs]="22">
+
+    <div class="mail">
+      <a href="mailto:dheenathayalanbsc2000@gmail.com" class="mail" style="margin-left: 50px;">
+        <img style="width:55%; height:55%;" Src="assets/gmail.jpg" />
+      </a>
+    </div>
+    <p style="color: var(--color-tertiary);text-align: center;">If you have something interesting, shoot me an email.
+    </p>
+  </nz-col>
+</nz-row>

@@ -1,0 +1,21 @@
+svg {
+  display: block;
+}
+.mail:hover {
+  justify-content: center;
+  transform: scale(1.5);
+}
+a > i {
+  color: var(--color-tertiary);
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.2s; /* Animation */
+}
+a > i:hover {
+  transform: scale(1.5);
+}
+h1,h2,h3{
+  color: var(--color-tertiary);
+  padding: 10px;
+}

@@ -1,0 +1,25 @@
+
+<nz-row  nzGutter="5" style="margin-top:50px;justify-content: center;">
+    <nz-col [nzSm]="{span:22,offset:2}" [nzXs]="24"><br/>
+        <h1 style="margin-left:15px;"><b>Proficiency</b></h1>
+    </nz-col>
+    <nz-col [nzSm]="12" [nzXs]="22" style="padding:20px;"><br/>
+        <nz-row  nzGutter="5" *ngFor="let data of proficiencyData">
+            <nz-col [nzSm]="{span:19,offset:5}" [nzXs]="24">
+                <b>{{data.title}}</b>
+            </nz-col>
+            <nz-col [nzSm]="{span:19,offset:5}" [nzXs]="24">
+                <nz-progress
+                [nzPercent]="data.persent"
+                [nzStrokeColor]="{ '0%': '#108ee9', '100%': '#87d068' }"
+                nzStatus="active"
+              ></nz-progress> <br/><br/><br/>
+            </nz-col> 
+        </nz-row>
+    </nz-col>
+    <nz-col [nzSm]="{span:11,offset:1}" [nzXs]="24">
+        <img style="width:90%;height:90%;"Src="assets/proficiency.jpg" />
+      </nz-col>
+</nz-row>
+
+
