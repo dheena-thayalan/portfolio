@@ -1,7 +1,7 @@
 .banner {
     display: flex;
-    background-image: url("src/assets/banner.gif")
-      background-size: cover;
+    background-image: url("src/assets/banner.gif")no-repeat center;
+    background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
 }
